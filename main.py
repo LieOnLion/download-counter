@@ -48,7 +48,7 @@ def getDownloads():
 
 cfheaders = {
     'Accept': 'application/json',
-    'x-api-key': '$2a$10$rVnnGf6WztLzli2pU3xIt.LeNYGvuVo3qGgQvQNb.ua3GrUOFXr2m'
+    'x-api-key': load_file("key")["key"]
 }
 
 mods = [
@@ -63,8 +63,11 @@ mods = [
     "581903-jCEmfHBM",
     "714218-GbO1YeS0",
     "915346-meHEWmih",
-    "575963-n/a"
+    "575963-n/a",
+    "852342-Y7CHzqj5"
 ]
+
+print(cfheaders)
 
 file_name = 'data'
 file_data = load_file(file_name)
