@@ -48,7 +48,7 @@ def getDownloads():
 
 cfheaders = {
     'Accept': 'application/json',
-    'x-api-key': load_file("key/key")["key"]
+    'x-api-key': load_file("key")["key"]
 }
 
 mods = [
