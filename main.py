@@ -67,8 +67,6 @@ mods = [
     "852342-Y7CHzqj5"
 ]
 
-print(cfheaders)
-
 file_name = 'data'
 file_data = load_file(file_name)
 save_file('data-backup')
